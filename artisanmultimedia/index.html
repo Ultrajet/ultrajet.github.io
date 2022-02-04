@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Vidéaste indépendant</title>
+</head>
+<style>
+    @font-face {
+        font-family: "Pacifica Condensed";
+        src: url("./pacificacondensedregular.ttf");
+    }
+    body {
+        background-image: url('./bg-index.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Pacifica Condensed', Arial;
+    }
+    .container {
+        margin: 0 auto;
+        width: 80%;
+    }
+    nav {
+        background: black;
+        color: white;
+        height: 80px;
+        margin-bottom: 32px;
+    }
+    nav ul {
+        display: flex;
+        height: 100%;
+        justify-content: space-around;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li:hover, .social-links a:hover {
+        opacity: 60%;
+    }
+    nav ul li {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    nav ul li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: unset;
+    }
+    nav ul li a span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 22px;
+    }
+    header {
+        margin-bottom: 4rem;
+    }
+    h1, h2 {
+        background: black;
+        color: white;
+        font-weight: 400;
+        letter-spacing: 10px;
+        margin: 0 auto 32px;
+        text-align: center;
+        text-shadow: rgb(200, 200, 200) 1px 1px 0px, rgb(180, 180, 180) 0px 2px 0px, rgb(160, 160, 160) 0px 3px 0px, rgba(140, 140, 140, 0.498) 0px 4px 0px, rgb(120, 120, 120) 0px 0px 0px, rgba(0, 0, 0, 0.498) 0px 5px 10px;
+        width: fit-content;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .social-links {
+        margin: 0 50px 4rem;
+        text-align: center;
+    }
+    .social-links .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    .social-links a {
+        display: inline-block;
+        padding: 30px 50px;
+        background: rgba(151, 10, 92, 0.2);
+        box-shadow: rgb(0 0 0 / 60%) 0px 1px 4px 0px;
+        text-decoration: none;
+        color: white;
+        font-size: 40px;
+    }
+    footer {
+        background: black;
+        color: white;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#"><span>ACCUEIL</span></a></li>
+                <li><a href="#"><span>VIDÉOS</span></a></li>
+                <li><a href="#"><span>MUSIQUES</span></a></li>
+                <li><a href="#"><span>PHOTOS</span></a></li>
+                <li><a href="#"><span>À PROPOS</span></a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>RONAN MARONGIU</h1>
+            <h2>ARTISAN MULTIMÉDIA</h2>
+            <h2>PORTFOLIO</h2>    
+        </header>
+        <div class="social-links">
+            <div class="row">
+                <a href="#">INSTAGRAM</a>
+                <a href="#">SOUNDCLOUD</a>
+            </div>
+            <a href="#">PLAYLISTS YOUTUBE</a>
+        </div>
+    </div>
+    <footer>
+        <p>el footer 🤠<br></p>
+    </footer>
+</body>
+</html>
