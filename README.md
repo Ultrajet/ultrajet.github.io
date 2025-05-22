@@ -5,5 +5,6 @@ Todos :
 ## Artisan multimédia
 
 - Rajouter liens page d'accueil
-- Adapter affichage pour smartphone
+  - utiliser React ?
+- Adapter affichage pour smartphone ⚠️ EN COURS ⚠️
 - Créer les 4 autres pages
