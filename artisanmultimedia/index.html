@@ -61,25 +61,16 @@
         height: 100%;
         /* font-size: 22px; */
     }
-    header {
-        margin-bottom: 4rem;
-    }
     h1, h2 {
-        background: black;
         color: white;
-        font-weight: 400;
         letter-spacing: 10px;
-        margin: 0 auto 32px;
         text-align: center;
         text-shadow: rgb(200, 200, 200) 1px 1px 0px, rgb(180, 180, 180) 0px 2px 0px, rgb(160, 160, 160) 0px 3px 0px, rgba(140, 140, 140, 0.498) 0px 4px 0px, rgb(120, 120, 120) 0px 0px 0px, rgba(0, 0, 0, 0.498) 0px 5px 10px;
-        width: fit-content;
+        margin-bottom: 2rem;
     }
-    /* h1 {
-        font-size: 50px;
+    h1 span, h2 span {
+        background: black;
     }
-    h2 {
-        font-size: 40px;
-    } */
     .social-links {
         margin: 0 50px;
         text-align: center;
@@ -92,7 +83,6 @@
         box-shadow: rgb(0 0 0 / 60%) 0px 1px 4px 0px;
         text-decoration: none;
         color: white;
-        /* font-size: 40px; */
     }
     footer {
         background: black;
@@ -103,11 +93,10 @@
         justify-content: center;
         text-align: center;
         width: 100%;
-        /* font-size: 12px; */
         font-family:'Courier New', Courier, monospace
     }
 </style>
-<body>
+<body class="d-flex flex-column justify-content-between">
     <div class="container">
         <nav>
             <ul>
@@ -119,9 +108,9 @@
             </ul>
         </nav>
         <header>
-            <h1>RONAN MARONGIU</h1>
-            <h2>ARTISAN MULTIMÉDIA</h2>
-            <h2>PORTFOLIO</h2>    
+            <h1><span>RONAN MARONGIU</span></h1>
+            <h2><span>ARTISAN MULTIMÉDIA</span></h2>
+            <h2><span>PORTFOLIO</span></h2>    
         </header>
         <div class="social-links">
             <div class="row row-cols-sm-2">
@@ -133,7 +122,7 @@
             </div>
         </div>
     </div>
-    <footer class="fixed-bottom">
+    <footer>
         <p>perdu</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
