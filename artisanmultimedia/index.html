@@ -21,45 +21,18 @@
         font-family: 'Pacifica Condensed', Arial;
         min-height: 100vh;
     }
-    .container {
-        padding-bottom: 64px;
-    }
     nav {
         background: black;
+    }
+    .nav-link {
         color: white;
-        height: 80px;
-        margin-bottom: 32px;
     }
-    nav ul {
-        display: flex;
-        height: 100%;
-        justify-content: space-around;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+    .nav-link:hover {
+        color: grey;
     }
-    nav ul li:hover, .social-links a:hover {
-        opacity: 60%;
-    }
-    nav ul li {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: center;
-    }
-    nav ul li a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-        color: unset;
-    }
-    nav ul li a span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        /* font-size: 22px; */
+    .container {
+        padding-bottom: 64px;
+        max-width: 960px;
     }
     h1, h2 {
         color: white;
@@ -99,14 +72,31 @@
 </style>
 <body class="d-flex flex-column justify-content-between">
     <div class="container">
-        <nav>
-            <ul>
-                <li><a href="#"><span>ACCUEIL</span></a></li>
-                <li><a href="#"><span>VIDÉOS</span></a></li>
-                <li><a href="#"><span>MUSIQUES</span></a></li>
-                <li><a href="#"><span>PHOTOS</span></a></li>
-                <li><a href="#"><span>À PROPOS</span></a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm mb-3 mb-sm-5">
+            <div class="container-fluid">
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 justify-content-around fs-5">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">ACCUEIL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">VIDÉOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">MUSIQUES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">PHOTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">À PROPOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <header>
             <h1><span>RONAN MARONGIU</span></h1>
@@ -116,15 +106,15 @@
         <div class="social-links">
             <div class="row row-cols-sm-2 row-gap-5">
                 <div class="col">
-                    <a href="https://www.instagram.com/django_renard_">INSTAGRAM</a>
+                    <a href="https://www.instagram.com/django_renard_" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
                 </div>
                 <div class="col">
-                    <a href="https://soundcloud.com/ronan-marongiu">SOUNDCLOUD</a>
+                    <a href="https://soundcloud.com/ronan-marongiu" target="_blank" rel="noopener noreferrer">SOUNDCLOUD</a>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col">
-                    <a href="https://www.youtube.com/@DjangoRenard/playlists">PLAYLISTS YOUTUBE</a>
+                    <a href="https://www.youtube.com/@DjangoRenard/playlists" target="_blank" rel="noopener noreferrer">PLAYLISTS YOUTUBE</a>
                 </div>
             </div>
         </div>
