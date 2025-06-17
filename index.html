@@ -68,6 +68,33 @@
         color: #888;
         font-style: italic;
     }
+    /* Hero Banner */
+    .hero-banner {
+        background: radial-gradient(ellipse at center, #111 0%, #000 100%);
+        padding: 4rem 2rem;
+        text-align: center;
+        border-bottom: 1px solid #222;
+        box-shadow: inset 0 -1px 10px rgba(0, 255, 150, 0.15);
+        position: relative;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+        color: #0fdf8a;
+        text-shadow: 0 0 8px rgba(15, 223, 138, 0.7);
+        margin-bottom: 0.5rem;
+        font-family: 'Space Grotesk', sans-serif;
+        letter-spacing: 2px;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+        color: #ccc;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+    }
+
 
     /* Séparateur */
     hr {
@@ -124,6 +151,16 @@
     <div class="container d-flex justify-content-center flex-column">
 
         <h1>Quentin Lagadou /<br>Teddy Waldon /<br>Ultrajet</h1>
+
+        <!-- Thumbnail / Hero Header -->
+        <header class="hero-banner">
+            <div class="hero-content">
+                <h1>Ultrajet</h1>
+                <p>Développeur & Artisan multimédia</p>
+            </div>
+        </header>
+
+
         <ul>
             <li><a href="./artisanmultimedia/"><span style="color: green">Artisan multimédia</span></a></li>
             <li><span style="color: red; text-decoration: line-through;">RYM notifications - Chrome extension</span></li>
