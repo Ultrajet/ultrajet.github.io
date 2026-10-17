@@ -1,0 +1,30 @@
+body {
+    background: lightslategrey;
+    color: white;
+    font-family: 'Bahnschrift';
+}
+.container {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px dashed white;
+    padding: 8px;
+}
+p {
+    margin-top: 8px;
+    font-size: 40px;
+}
+#map {
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+#pokemon-list {
+    height: 200px;
+    overflow-y: auto;
+    background: white;
+    color: black;
+    border: 1px solid red;
+}
