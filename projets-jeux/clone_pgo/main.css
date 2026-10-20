@@ -1,17 +1,16 @@
 body {
-    background: lightslategrey;
-    color: white;
+    background: url("./bg-pokeball.png");
     font-family: 'Bahnschrift';
 }
 .container {
     width: 500px;
     margin: 0 auto;
-    border: 1px dashed white;
+    border: 1px dashed red;
     padding: 8px;
+    background: #FFFFE9;
 }
 p {
     margin-top: 8px;
-    font-size: 40px;
 }
 #map {
     height: 200px;
@@ -27,4 +26,5 @@ p {
     background: white;
     color: black;
     border: 1px solid red;
+    margin: 0;
 }
